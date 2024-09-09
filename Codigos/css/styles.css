@@ -1,0 +1,58 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #26939f;
+    --gris: #757575;
+}
+
+/*Truco para uniformidad de texto entre navegadores*/
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px;
+}
+
+/*El punto hace referencia a clases*/
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.titulo span {
+    font-size: 2rem;
+}
+.navegacion-principal {
+    background-color: var(--secundario);
+    /*Margin es por fuera y padding es por dentro*/
+    padding: 1rem;
+    display: flex; /*Flexbox esta diseñado para alinear elementos en tus diseños*/
+    /*justify- content para FILAS / align-items es para COLUMNAS */
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 2rem;
+}
+/*Cambia algo al poner el cursor encima*/
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none; /*Remueve el estilo subrayado en el texto*/
+}
+
+.contenedor {
+    width: 120rem; /*1200 pixeles porque 1 rem= 10px*/
+    /*margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0; */
+    margin: 0 auto;
+} 
+
+.nav-bg {
+    background-color: var(--secundario);
+}
