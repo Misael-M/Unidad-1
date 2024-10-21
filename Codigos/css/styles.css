@@ -13,7 +13,7 @@ html {
 }
 /* Estilo por defecto para móviles pequeños */
 body {
-    background-image: linear-gradient(to top, var(#757575) 0%, var(#ffffff) 100%);
+    background-image: linear-gradient(to top, #757575 0%, #ffffff 100%);
     font-size: 16px;
     font-family: krub, sans-serif;
 }
@@ -61,13 +61,13 @@ h1,h2,h3 {
 
 /*Cambia algo al poner el cursor encima*/
 .navegacion-principal a:hover{
-    background-color: var(--primario);
-    color: var(--oscuro);
+    background-color: #ffc107;
+    color: #212121;
     padding: auto;
 }
 
 .navegacion-principal a{
-    color: var(--blanco);
+    color: #ffffff;
     text-decoration: none; /*Remueve el estilo subrayado en el texto*/
 }
 
@@ -81,7 +81,7 @@ h1,h2,h3 {
 } 
 
 .nav-bg {
-    background-color: var(--secundario);
+    background-color: #26939f;
 }
 
 .hero {
@@ -130,3 +130,42 @@ h1,h2,h3 {
         width: auto;
     }
 }
+
+/*Servicios*/
+
+@media (min-width: 768px){
+ .servicios {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; Por fracciones */
+    /* grid-template-columns: 33.3% 33.3% 33.3%; Por porcentaje */
+    grid-template-columns: repeat(3, 1fr);
+    /*Esta propiedad define el area de las columnas y 
+    la funcion repeat() repite 3 veces 1 fraccion en el grid/rejilla/cuadrícula*/
+    column-gap: 1rem; /*Espacio vacío entre columnas*/
+ }
+ }
+
+ /*Centrar iconos*/
+ .servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+        color: #26939f;
+        font-weight: normal;
+    }
+    p{
+        text-align: center;
+        line-height: 2; /*Interlineado*/
+    }
+    .iconos{
+        width: 15rem;
+        height: 15rem;
+        background-color: #ffc107;
+        border-radius: 50%; /*a partir de 50% se vuelve circular*/
+        /*Centra un elemento vertical y horizontalmente*/
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+ }
