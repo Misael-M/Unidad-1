@@ -99,39 +99,41 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, porro dolorem? Quibusdam alias quidem sed, libero, fuga fugiat qui accusantium illo maxime harum consectetur quos enim saepe ipsa recusandae laudantium?</p>
         </section>
         </div>
-    </main>
 
     <section>
         <h2>Contacto</h2>
-        <form>
+        <form class="formulario">
             <fieldset>
                 <legend>Llena tus datos de contacto</legend>
-                <div>
+                <div class="contenedor-campos"> 
+                <div class="campo">
                     <label>Nombre</label>
                     <input type="text" placeholder="Tu nombre">
                 </div>
 
-                <div>
+                <div class="campo">
                     <label>Teléfono</label>
                     <input type="tel" placeholder="Tu teléfono">
                 </div>
 
-                <div>
+                <div class="campo">
                     <label>Correo</label>
                     <input type="email" placeholder="Tu correo">
                 </div>
 
-                <div>
+                <div class="campo">
                     <label>Mensaje</label>
                     <textarea> </textarea>
                 </div>
-                <div>
-                    <input type="submit" value="Enviar">
+                </div>
+
+                <div class="alinear-derecha flex">
+                    <input class="boton" type="submit" value="Enviar">
                 </div>
             </fieldset>
         </form>
     </section>
-
+    </main>
     <footer>
         <p>Todos los derechos reservados ©. Manrique Peniche Misael Isaias</p>
     </footer>
